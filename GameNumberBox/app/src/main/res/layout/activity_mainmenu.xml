@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mainmenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Mainmenu"
+    android:background="@mipmap/background">
+
+    <Button
+        android:text="Level I (3x3)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUcerlik"
+        android:onClick="Tiklandi"
+        android:background="@drawable/radius"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnDorderlik"
+        android:textColor="@color/text"
+        android:layout_alignEnd="@+id/btnDorderlik"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:text="Level II (4x4)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDorderlik"
+        android:onClick="Tiklandi"
+        android:background="@drawable/radius"
+        android:layout_below="@+id/btnUcerlik"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:textColor="@color/text"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:text="Level III (3x3)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPuzzleUcerlik"
+        android:onClick="Tiklandi"
+        android:background="@drawable/radius"
+        android:layout_below="@+id/btnDorderlik"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text"
+        android:layout_marginTop="48dp"
+        tools:ignore="OnClick" />
+    <Button
+        android:text="Level IV (4x4)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPuzzleDorderlik"
+        android:onClick="Tiklandi"
+        android:background="@drawable/radius"
+        android:layout_below="@+id/btnPuzzleUcerlik"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:textColor="@color/text"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btnHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPuzzleDorderlik"
+        android:layout_alignStart="@+id/btnUcerlik"
+        android:layout_alignLeft="@+id/btnUcerlik"
+        android:layout_alignEnd="@+id/btnDorderlik"
+        android:layout_alignRight="@+id/btnDorderlik"
+        android:background="@drawable/radius"
+        android:layout_marginTop="48dp"
+        android:onClick="Tiklandi"
+        android:text=" HELP"
+        android:textColor="@color/text"
+        tools:ignore="OnClick" />
+
+
+</RelativeLayout>

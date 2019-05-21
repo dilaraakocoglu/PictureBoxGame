@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dilara.gamenumberbox">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/picture_box"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/picture_box"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DortcarpidortPuzzle"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity android:name="com.dilara.gamenumberbox.UccarpiucPuzzle"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name="com.dilara.gamenumberbox.uccarpiuc"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name="com.dilara.gamenumberbox.Mainmenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name="com.dilara.gamenumberbox.Help"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name="com.dilara.gamenumberbox.dortcarpidort"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name="com.dilara.gamenumberbox.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
